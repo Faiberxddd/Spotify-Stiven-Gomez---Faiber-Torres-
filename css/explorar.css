@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    line-height: 1.6;
+    color: white;
+    background: black;
+}
+
+header {
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.main {
+    max-width: 1850px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* INTRO */
+.intro {
+    margin: 0 auto ;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.sec {
+    margin-bottom: 60px;
+}
+
+.sec h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* GRID GENERAL */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+/* GÉNEROS */
+.gen-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.gen-card {
+    background-color: green;
+    padding: 40px 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.gen-card:hover {
+    background-color: rgb(2, 108, 2);
+}
+
+/* MOOD */
+.mood-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.mood-card {
+    background-color: green;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.mood-card:hover {
+    background-color: rgb(2, 108, 2);
+}
+
+/* ÁLBUMES */
+.alb-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.alb-card {
+    background-color: var(--bg-sec);
+    padding: 15px;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.alb-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.alb-card h3 {
+    font-size: 16px;
+}
+
+.alb-card p {
+    color: var(--txt-sec);
+    font-size: 14px;
+}
+
+.alb-card:hover {
+    transform: scale(1.03);
+}
+
+/* FOOTER */
+.ftr {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--txt-sec);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hdr {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .intro h2 {
+        font-size: 26px;
+    }
+}

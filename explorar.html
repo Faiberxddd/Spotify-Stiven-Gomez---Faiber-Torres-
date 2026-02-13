@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify: Explorar</title>
+    <link rel="stylesheet" href="../css/explorar.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Spotify</h1>
+            </div>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./artistas.html">Artistas</a></li>
+                <li><a href="./playlists.html">Playlists</a></li>
+                <li><a href="./explorar.html">Explorar</a></li>
+            </ul>
+        </nav>
+    </header>
+<main class="main">
+        <section class="intro">
+            <h2>Explora nueva música</h2>
+            <p>
+                Descubre géneros, estados de ánimo y álbumes recomendados
+                para cada momento.
+            </p>
+        </section>
+        <section class="sec gen">
+            <h2>Explorar por géneros</h2>
+
+            <div class="grid gen-grid">
+                <div class="card gen-card">Pop</div>
+                <div class="card gen-card">Rock</div>
+                <div class="card gen-card">Rap</div>
+                <div class="card gen-card">Electrónica</div>
+                <div class="card gen-card">Reggaetón</div>
+                <div class="card gen-card">Indie</div>
+            </div>
+        </section>
+
+        <section class="sec mood">
+            <h2>Música según tu estado de ánimo</h2>
+
+            <div class="grid mood-grid">
+                <div class="card mood-card">😴 Chill</div>
+                <div class="card mood-card">🔥 Energía</div>
+                <div class="card mood-card">💔 Triste</div>
+                <div class="card mood-card">🚀 Motivación</div>
+            </div>
+        </section>
+
+        <!-- ÁLBUMES -->
+        <section class="sec alb">
+            <h2>Álbumes recomendados</h2>
+
+            <div class="grid alb-grid">
+                <div class="card alb-card">
+                    <img src="img/album1.jpg" alt="Álbum 1">
+                    <h3>Midnight Vibes</h3>
+                    <p>Neon Sound · 2024</p>
+                </div>
+
+                <div class="card alb-card">
+                    <img src="img/album2.jpg" alt="Álbum 2">
+                    <h3>Urban Flow</h3>
+                    <p>Street Beats · 2023</p>
+                </div>
+
+                <div class="card alb-card">
+                    <img src="img/album3.jpg" alt="Álbum 3">
+                    <h3>Chill Sessions</h3>
+                    <p>LoFi Mood · 2022</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="ftr">
+        <p>Spotify © 2026</p>
+    </footer>
     
 </body>
 </html>
