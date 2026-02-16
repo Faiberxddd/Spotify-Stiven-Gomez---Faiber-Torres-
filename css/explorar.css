@@ -5,173 +5,539 @@
 }
 
 body {
-    font-family: poppins, sans-serif;
-    line-height: 1.6;
-    color: white;
-    background: black;
+    font-family: Poppins, sans-serif;
+    background-color: #121212;
+    color: white;    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInPage 0.8s ease forwards;
+}
+
+@keyframes fadeInPage {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
 
 header {
-    color: white;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 15px 40px;
+    background-color: #000;
 }
 
 nav {
-    max-width: 1800px;
-    margin: 0 auto;
-    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.logo span {
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
 nav ul {
     list-style: none;
-    display: flex;
-    gap: 2rem;
+    display : flex;
+    gap: 30px;
 }
 
-nav a {
-    color: white;
+nav ul li a {
     text-decoration: none;
-    font-weight: 500;
-    transition: opacity 0.3s;
+    color: #b3b3b3;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-nav a:hover {
-    opacity: 0.7;
+nav ul li a:hover {
+    color: #fff;
 }
 
-.main {
-    max-width: 1850px;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
-/* INTRO */
-.intro {
-    margin: 0 auto ;
-    text-align: center;
-}
-
-.intro h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.sec {
-    margin-bottom: 60px;
-}
-
-.sec h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-/* GRID GENERAL */
-.grid {
-    display: grid;
+.auth {
+    display: flex;
     gap: 20px;
 }
 
-/* GÉNEROS */
-.gen-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.gen-card {
-    background-color: green;
-    padding: 40px 20px;
-    text-align: center;
+.btn-login {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
     font-weight: bold;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
 }
 
-.gen-card:hover {
-    background-color: rgb(2, 108, 2);
+.btn-login:hover {
+    background-color: #b3b3b3;
 }
 
-/* MOOD */
-.mood-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+.btn-registro {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-.mood-card {
-    background-color: green;
+.btn-registro:hover {
+    background-color: #b3b3b3;
+}
+
+.explorar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 420px;
+    border-top: 1px solid #222;
+}
+
+.explorar-header input {
+    padding: 16px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #222;
+    color: white;
+}
+
+.categorias {
     padding: 30px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 12px;
+}
+
+.categorias h3 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.categoria-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.categoria-card {
+    padding: 40px 40px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
+    transition: 0.3s;
+    overflow: hidden;
 }
 
-.mood-card:hover {
-    background-color: rgb(2, 108, 2);
+.pop {
+    background-color: #7ee2a1;
 }
 
-/* ÁLBUMES */
-.alb-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.rock {
+    background-color: #d17bb5;
 }
 
-.alb-card {
-    background-color: var(--bg-sec);
+.urbano {
+    background-color: #7ee2a1;
+}
+
+.electronica {
+    background-color: #d17bb5;
+}
+
+.latino {
+    background-color: #fa9292;
+}
+
+.reggaeton {
+    background-color: #b27bf0;
+}
+
+.hiphop {
+    background-color: #f7e97e;
+}
+
+.jazz {
+    background-color: #fa9292;
+}
+
+.categoria-card:hover {
+    opacity: 0.7;
+}
+
+.btn-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #b3b3b3;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.btn-next:hover {
+    opacity: 0.7;
+}
+
+.artistas {
+    padding: 30px;
+}
+
+.artistas h3 {
+    font-size: 40px;
+}
+
+.artista-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.artista-card {
+    width: 200px;
     padding: 15px;
-    border-radius: 12px;
-    transition: transform 0.3s;
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-top: 20px ;
 }
 
-.alb-card img {
+.artista-card:hover {
+    background-color: #222;
+}
+
+.artista-card img {
     width: 100%;
-    border-radius: 8px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.artista-card h1 {
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.artista-card p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #b3b3b3;
+    font-weight: bold;
+}
+
+
+.albumes {
+    padding: 30px;
+}
+
+.albumes h3 {
+    font-size: 40px;
+}
+
+.album-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.album-card {
+    width: 200px;
+    padding: 15px;
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-top: 20px ;
+}
+
+.album-card:hover {
+    background-color: #222;
+}
+
+.album-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.album-card h1 {
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.album-card p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #b3b3b3;
+    font-weight: bold;
+}
+
+.listas {
+    padding: 30px;
+}
+
+.listas h3 {
+    font-size: 40px;
+}
+
+.list-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.list-card {
+    width: 200px;
+    padding: 15px;
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-top: 20px ;
+}
+
+.list-card:hover {
+    background-color: #222;
+}
+
+.list-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.list-card h1 {
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.list-card p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #b3b3b3;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #000;
+    padding: 60px 40px 20px 40px;
+    color: #b3b3b3;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo h2 {
+    color: #b3b3b3;
     margin-bottom: 10px;
 }
 
-.alb-card h3 {
-    font-size: 16px;
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
 }
 
-.alb-card p {
-    color: var(--txt-sec);
-    font-size: 14px;
+.footer-social-icons a {
+    width: 45px;
+    height: 45px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.alb-card:hover {
-    transform: scale(1.03);
+.footer-social-icons a:hover {
+    background-color: #b3b3b3;
 }
 
-/* FOOTER */
-.ftr {
-    background-color: #1e1e1e;
+.footer-bottom {
+    border-top: 1px solid #222;
+    padding-top: 20px;
     text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    color: var(--txt-sec);
+    font-size: 0.9rem;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .hdr {
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .explorar-header {
+        gap: 40px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .explorar-header input {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .categoria-container,
+    .artista-container,
+    .album-container,
+    .list-container {
+        justify-content: center;
+    }
+
+    .categorias h3,
+    .artistas h3,
+    .albumes h3,
+    .listas h3 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    nav {
         flex-direction: column;
         gap: 15px;
     }
 
-    .nav a {
-        margin-left: 10px;
-        margin-right: 10px;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
-    .main {
-        padding: 20px;
+    .auth {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
 
-    .intro h2 {
-        font-size: 26px;
+    .btn-login,
+    .btn-registro {
+        width: 80%;
+        text-align: center;
     }
+
+    .explorar-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .explorar-header input {
+        width: 90%;
+    }
+
+    .categoria-card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .artista-card,
+    .album-card,
+    .list-card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .artista-container,
+    .album-container,
+    .list-container {
+        justify-content: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-social-icons {
+        justify-content: center;
+    }
+
 }
+
+@media (max-width: 768px) {
+
+    .categoria-card {
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .categoria-card h4,
+    .categoria-card h3 {
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+    .explorar-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .categoria-container,
+    .artista-container,
+    .album-container,
+    .list-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 16px;
+        padding-bottom: 10px;
+    }
+
+    .categoria-card,
+    .artista-card,
+    .album-card,
+    .list-card {
+        flex: 0 0 auto;
+        width: 160px;
+    }
+
+}
+
+

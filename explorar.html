@@ -1,88 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify: Explorar</title>
-    <link rel="stylesheet" href="../css/explorar.css">
+    <title>Explorar</title>
+    <link rel="stylesheet" href="./css/explorar.css">
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <body>
-    <header>
+<header>
         <nav>
             <div class="logo">
-                <h1>Spotify</h1>
+                <a href="./inicio.html"><img src="img/logo.png" alt="logo"></a>
+                <a href="./inicio.html"><span>Lite</span></a>
             </div>
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./artistas.html">Artistas</a></li>
-                <li><a href="./playlists.html">Playlists</a></li>
+                <li><a href="./inicio.html">Inicio</a></li>
                 <li><a href="./explorar.html">Explorar</a></li>
+                <li><a href="./premium.html">Premium</a></li>
             </ul>
+            <div class="auth">
+                <a href="./login.html" class="btn-login">Iniciar sesión</a>
+                <a href="./registro.html" class="btn-registro">Registrate</a>
+            </div>
         </nav>
     </header>
-<main class="main">
-        <section class="intro">
-            <h2>Explora nueva música</h2>
-            <p>
-                Descubre géneros, estados de ánimo y álbumes recomendados
-                para cada momento.
-            </p>
-        </section>
-        <section class="sec gen">
-            <h2>Explorar por géneros</h2>
-
-            <div class="grid gen-grid">
-                <div class="card gen-card">Pop</div>
-                <div class="card gen-card">Rock</div>
-                <div class="card gen-card">Rap</div>
-                <div class="card gen-card">Electrónica</div>
-                <div class="card gen-card">Reggaetón</div>
-                <div class="card gen-card">Indie</div>
+<header class="explorar-header">
+    <h2>Explorar Música</h2>
+    <input type="text" placeholder="¿Qué quieres escuchar?">
+</header>
+<section class="categorias">
+    <h3>Categorías</h3>
+    <div class="categoria-container">
+        <div class="categoria-card pop">
+            <h1>Pop</h1>
+        </div>
+        <div class="categoria-card rock">
+            <h1>Rock</h1>
+        </div>
+        <div class="categoria-card urbano">
+            <h1>Urbano</h1>
+        </div>
+        <div class="categoria-card electronica">
+            <h1>Electrónica</h1>
+        </div>
+        <div class="categoria-card latino">
+            <h1>Latino</h1>
+        </div>
+        <div class="categoria-card reggaeton">
+            <h1>Reggaeton</h1>
+        </div>
+        <div class="categoria-card hiphop">
+            <h1>Hip-Hop</h1>
+        </div>
+        <div class="categoria-card jazz">
+            <h1>Jazz</h1>
+        </div>
+        <button class="btn-next">
+            &#8250;
+        </button>
+    </div>
+</section>
+<section class="artistas">
+    <h3>Artistas populares</h3>
+    <div class="artista-container">
+        <div class="artista-card">
+            <img src="img/artista1.png" alt="BadBunny">
+            <h1>Bad Bunny</h1>
+            <p>Artista</p>
+        </div>
+        <div class="artista-card">
+            <img src="img/artista2.png" alt="KarolG">
+            <h1>Karol G</h1>
+            <p>Artista</p>
+        </div>
+        <div class="artista-card">
+            <img src="img/artista3.png" alt="Blessd">
+            <h1>Blessd</h1>
+            <p>Artista</p>
+        </div>
+        <div class="artista-card">
+            <img src="img/artista4.png" alt="Feid">
+            <h1>Feid</h1>
+            <p>Artista</p>
+        </div>
+        <div class="artista-card">
+            <img src="img/artista5.png" alt="Maluma">
+            <h1>Maluma</h1>
+            <p>Artista</p>
+        </div>
+        <div class="artista-card">
+            <img src="img/artista6.png" alt="W Sound">
+            <h1>W Sound</h1>
+            <p>Artista</p>
+        </div>
+        <div class="artista-card">
+            <img src="img/artista7.png" alt="J Balvin">
+            <h1>J Balvin</h1>
+            <p>Artista</p>
+        </div>
+        <div class="artista-card">
+            <img src="img/artista8.png" alt="Ryan Catro">
+            <h1>Ryan Castro</h1>
+            <p>Artista</p>
+        </div>
+        <button class="btn-next">
+            &#8250;
+        </button>
+    </div>
+</section>
+<section class="albumes">
+    <h3>Albumes sencillos y populares</h3>
+    <div class="album-container">
+        <div class="album-card">
+            <img src="img/album1.png" alt="BORONDO">
+            <h1>BORONDO</h1>
+            <p>BEÉLE</p>
+        </div>
+        <div class="album-card">
+            <img src="img/album2.png" alt="DeBÍ TIRAR MáS FOToS">
+            <h1>DeBÍ TIRAR MáS FOToS</h1>
+            <p>Bad Bunny</p>
+        </div>
+        <div class="album-card">
+            <img src="img/album3.png" alt="Un Verano Sin Ti">
+            <h1>Un Verano Sin Ti</h1>
+            <p>Bad Bunny</p>
+        </div>
+        <div class="album-card">
+            <img src="img/album4.png" alt="Lo Mismo De Siempre">
+            <h1>LO MISMO DE SIEMPRE</h1>
+            <p>Mora</p>
+        </div>
+        <div class="album-card">
+            <img src="img/album5.png" alt="MAÑANA SERA BONITO">
+            <h1>MAÑANA SERA BONITO</h1>
+            <p>KAROL G</p>
+        </div>
+        <div class="album-card">
+            <img src="img/album6.png" alt="La Plena (W Sound 5)">
+            <h1>La Plena (W Sound 5)</h1>
+            <p>W Sound. BEÉLE, Ovy On The Drums</p>
+        </div>
+        <div class="album-card">
+            <img src="img/album7.png" alt="SENDÉ">
+            <h1>SENDÉ</h1>
+            <p>Ryan Castro</p>
+        </div>
+        <div class="album-card">
+            <img src="img/album8.png" alt="FERXXOCALIPSIS">
+            <h1>FERXXOCALIPSIS</h1>
+            <p>Feid</p>
+        </div>
+        <button class="btn-next">
+            &#8250;
+        </button>
+    </div>
+</section>
+<section class="listas">
+    <h3>Listas destacadas</h3>
+    <div class="list-container">
+        <div class="list-card">
+            <img src="img/list1.png" alt="BORONDO">
+            <p>Tu actualizacion semanal de las canciones mas...</p>
+        </div>
+        <div class="list-card">
+            <img src="img/list2.png" alt="DeBÍ TIRAR MáS FOToS">
+            <p>Tus actualizacion semanal de las canciones mas...</p>
+        </div>
+        <div class="list-card">
+            <img src="img/list3.png" alt="Un Verano Sin Ti">
+            <p>Tus actualizacion semanal de las canciones mas...</p>
+        </div>
+        <div class="list-card">
+            <img src="img/list4.png" alt="Lo Mismo De Siempre">
+            <p>Tus actualizacion semanal de las canciones mas...</p>
+        </div>
+        <div class="list-card">
+            <img src="img/list5.png" alt="MAÑANA SERA BONITO">
+            <p>Tus actualizacion semanal de las canciones mas virales e...</p>
+        </div>
+        <div class="list-card">
+            <img src="img/list6.png" alt="La Plena (W Sound 5)">
+            <p>Tus actualizacion semanal de las canciones mas virales e...</p>
+        </div>
+        <button class="btn-next">
+            &#8250;
+        </button>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>Spotify Lite</h2>
+            <p>Tu música, en cualquier momento.</p>
+        </div>
+        <div class="footer-social">
+            <div class="footer-social-icons">
+                <a href="https://www.instagram.com/spotify/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/SpotifyColombia/?brand_redir=6243987495&locale=es_LA#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/Spotify_LATAM" target="_blank"><i class="fab fa-x-twitter"></i></a>
             </div>
-        </section>
-
-        <section class="sec mood">
-            <h2>Música según tu estado de ánimo</h2>
-
-            <div class="grid mood-grid">
-                <div class="card mood-card">😴 Chill</div>
-                <div class="card mood-card">🔥 Energía</div>
-                <div class="card mood-card">💔 Triste</div>
-                <div class="card mood-card">🚀 Motivación</div>
-            </div>
-        </section>
-
-        <!-- ÁLBUMES -->
-        <section class="sec alb">
-            <h2>Álbumes recomendados</h2>
-
-            <div class="grid alb-grid">
-                <div class="card alb-card">
-                    <img src="img/album1.jpg" alt="Álbum 1">
-                    <h3>Midnight Vibes</h3>
-                    <p>Neon Sound · 2024</p>
-                </div>
-
-                <div class="card alb-card">
-                    <img src="img/album2.jpg" alt="Álbum 2">
-                    <h3>Urban Flow</h3>
-                    <p>Street Beats · 2023</p>
-                </div>
-
-                <div class="card alb-card">
-                    <img src="img/album3.jpg" alt="Álbum 3">
-                    <h3>Chill Sessions</h3>
-                    <p>LoFi Mood · 2022</p>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="ftr">
-        <p>Spotify © 2026</p>
-    </footer>
-    
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Spotify AB</p>
+    </div>
+</footer>
 </body>
 </html>
