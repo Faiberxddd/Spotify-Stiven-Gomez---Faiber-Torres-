@@ -13,7 +13,6 @@ body {
     animation: fadeInPage 0.8s ease forwards;
 }
 
-/* Animación */
 @keyframes fadeInPage {
     to {
         opacity: 1;
