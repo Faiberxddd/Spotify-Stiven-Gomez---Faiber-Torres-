@@ -460,26 +460,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-    .categoria-card {
-        width: 160px;
-        padding: 20px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .categoria-card h4,
-    .categoria-card h3 { 
-        font-size: 14px;
-         word-wrap: break-word;
-         }
-
-    .explorar-header { 
-        flex-direction: column;
-         gap: 20px; 
-        }
-
+    /* Contenedores scrollables */
     .categoria-container,
     .artista-container,
     .album-container,
@@ -488,9 +469,12 @@ nav ul li a:hover {
         flex-wrap: nowrap;
         overflow-x: auto;
         gap: 16px;
-        padding-bottom: 10px;
+        padding: 0 16px 10px 16px; /* padding horizontal para que la primera card no se corte */
+        scroll-padding-left: 16px;
+        -webkit-overflow-scrolling: touch; /* scroll suave en iOS */
     }
 
+    /* Cards fijas para scroll horizontal */
     .categoria-card,
     .artista-card,
     .album-card,
@@ -499,6 +483,7 @@ nav ul li a:hover {
         width: 160px; 
     }
 
+    /* Player card responsive */
     .player-card { 
         flex-direction: column; 
         text-align: center; 
@@ -507,8 +492,8 @@ nav ul li a:hover {
 
     .player-card img { 
         width: 120px;
-         height: 120px; 
-        }
+        height: 120px; 
+    }
 
     .player-info { 
         width: 100%; 
@@ -519,6 +504,7 @@ nav ul li a:hover {
     }
 }
 
+/* ----- MÓVILES PEQUEÑOS (600px) ----- */
 @media (max-width: 600px) {
     nav { 
         flex-direction: column; 
@@ -553,22 +539,28 @@ nav ul li a:hover {
         width: 90%; 
     }
 
-    .categoria-card { 
-        width: 100%; 
-        text-align: center; 
+    /* Contenedores scrollables */
+    .categoria-container,
+    .artista-container,
+    .album-container,
+    .list-container {
+        justify-content: flex-start;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 16px;
+        padding: 0 16px 10px 16px;
+        scroll-padding-left: 16px;
+        -webkit-overflow-scrolling: touch;
     }
 
+    .categoria-card,
     .artista-card,
     .album-card,
     .list-card { 
+        flex: 0 0 auto; 
         width: 100%; 
         max-width: 280px; 
-    }
-
-    .artista-container,
-    .album-container,
-    .list-container { 
-        justify-content: center; 
     }
 
     .footer-container { 
