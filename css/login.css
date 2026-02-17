@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: linear-gradient(135deg, #121212, #000);
+    height: 100vh;transform: translateY(20px);
+    animation: fadeInPage 0.8s ease forwards;
+}
+
+@keyframes fadeInPage {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: #181818;
+    padding: 40px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    color: white;
+}
+
+.login-box img {
+    width: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #222;
+    color: white;
+}
+
+.input-group input:focus {
+    outline: 2px solid #1DB954;
+}
+
+.btn-login-main {
+    width: 100%;
+    padding: 12px;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login-main:hover {
+    transform: scale(1.05);
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.register-link a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+
+    .login-box {
+        width: 90%;
+        max-width: 400px;
+        padding: 35px;
+    }
+
+    .login-box img {
+        width: 80px;
+    }
+
+    .login-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-login-main {
+        padding: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        height: auto;
+    }
+
+    .login-section {
+        padding: 20px;
+    }
+
+    .login-box {
+        width: 100%;
+        padding: 25px;
+        border-radius: 12px;
+    }
+
+    .login-box img {
+        width: 70px;
+    }
+
+    .login-box h2 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .input-group input {
+        padding: 9px;
+        font-size: 0.9rem;
+    }
+
+    .btn-login-main {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .register-link {
+        font-size: 0.8rem;
+    }
+}
