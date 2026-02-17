@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #121212, #000);
+    min-height: 100vh;
+    transform: translateY(20px);
+    animation: fadeInPage 0.8s ease forwards;
+}
+
+@keyframes fadeInPage {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.registro-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.registro-box {
+    background-color: #181818;
+    padding: 40px;
+    border-radius: 15px;
+    width: 380px;
+    color: white;
+    text-align: center;
+}
+
+.registro-box img {
+    width: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.registro-box h2 {
+    margin-bottom: 30px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #222;
+    color: white;
+}
+
+.input-group input:focus {
+    outline: 2px solid #1DB954;
+}
+
+.btn-registro-main {
+    width: 100%;
+    padding: 12px;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-registro-main:hover {
+    transform: scale(1.05);
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.login-link a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+
+    .registro-box {
+        width: 90%;
+        max-width: 420px;
+        padding: 35px;
+    }
+
+    .registro-box img {
+        width: 85px;
+    }
+
+    .registro-box h2 {
+        font-size: 1.6rem;
+    }
+
+    .btn-registro-main {
+        padding: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .registro-section {
+        height: auto;
+        padding: 20px;
+    }
+
+    .registro-box {
+        width: 100%;
+        padding: 25px;
+        border-radius: 12px;
+    }
+
+    .registro-box img {
+        width: 70px;
+    }
+
+    .registro-box h2 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .input-group input {
+        padding: 9px;
+        font-size: 0.9rem;
+    }
+
+    .btn-registro-main {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .login-link {
+        font-size: 0.8rem;
+    }
+}
