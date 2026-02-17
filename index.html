@@ -1,103 +1,82 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Music App</title>
-    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Lite</title>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <body>
     <header>
-        <div class="logo">🎵 Spotify</div>
         <nav>
-            <a href="./index.html">Inicio</a>
-            <a href="./artistas.html">Artistas</a>
-            <a href="./playlists.html">Playlists</a>
-            <a href="./explorar.html">Explorar</a>
-            
+            <div class="logo">
+                <a href="./inicio.html"><img src="img/logo.png" alt="logo"></a>
+                <a href="./inicio.html"><span>Lite</span></a>
+            </div>
+            <ul>
+                <li><a href="./inicio.html">Inicio</a></li>
+                <li><a href="./explorar.html">Explorar</a></li>
+                <li><a href="./premium.html">Premium</a></li>
+            </ul>
+            <div class="auth">
+                <a href="./login.html" class="btn-login">Iniciar sesión</a>
+                <a href="./registro.html" class="btn-registro">Registrate</a>
+            </div>
         </nav>
     </header>
-
-    <!-- PRESENTACIÓN -->
-    <section class="hero">
-        <h1>Descubre tu música favorita</h1>
-        <p>Escucha las mejores playlists y álbumes del momento.</p>
-        <button>Explorar ahora</button>
-    </section>
-
-    <!-- PLAYLISTS POPULARES -->
-    <section class="playlists">
-        <h2>Playlists populares</h2>
-
-        <div class="cards">
-
-            <div class="card">
-               <img src="https://i.scdn.co/image/ab67616d0000b27363988606ddc2d38d43ab7cb0" alt="">
-                <h3>Fuerza Regia</h3>
-                <p>Los éxitos del momento.</p>
-            </div>
-
-            <div class="card">
-               <img src="https://i.scdn.co/image/ab6775700000ee856084822fa80936660ebced43" alt="">
-                <h3>blessd</h3>
-                <p>Las canciones más virales.</p>
-            </div>
-
-            <div class="card">
-                <img src="https://i.scdn.co/image/ab67616d00001e02c70774491fdb710c42208905" alt="">
-                <h3>Manuel Medrano</h3>
-                <p>Música para relajarte.</p>
-            </div>
-
-            <div class="card">
-                <img src="https://i.scdn.co/image/ab67616d0000b273b68b59fcf7e86981828f1fd2">
-                <h3>Crack Family</h3>
-                <p>Entrena con energía.</p>
-            </div>
-
-            <div class="card">
-              <img src="https://i.scdn.co/image/ab67616d00001e0241be9b1b06ec6714dcfce39c" alt="">
-                <h3>Maelo Ruiz</h3>
-                <p>Los éxitos del momento.</p>
-            </div>
-
-            <div class="card">
-               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBg7S16yXvLECayHBLl0ar7tXKtr1pteetsQ&s" alt="">
-                <h3>Kaleth Morales</h3>
-                <p>Los éxitos del momento.</p>
-            </div>
-
-            <div class="card">
-               <img src="https://i.scdn.co/image/ab67616d0000b27363988606ddc2d38d43ab7cb0" alt="">
-                <h3>Fuerza Regia</h3>
-                <p>Los éxitos del momento.</p>
-            </div>
-
-            <div class="card">
-               <img src="https://i.scdn.co/image/ab67616d0000b27363988606ddc2d38d43ab7cb0" alt="">
-                <h3>Fuerza Regia</h3>
-                <p>Los éxitos del momento.</p>
-            </div>
-
-            <div class="card">
-               <img src="https://i.scdn.co/image/ab67616d0000b27363988606ddc2d38d43ab7cb0" alt="">
-                <h3>Fuerza Regia</h3>
-                <p>Los éxitos del momento.</p>
-            </div>
-
-            
+<section class="hero">
+    <div class="hero-content">
+        <h1>La música que mueve tu mundo</h1>
+        <p>Descubre millones de canciones, crea tus propias playlists y disfruta de una experiencia sin límites.</p>
+        <div class="hero-buttons">
+            <a href="./premium.html" class="btn-primary">Ver Planes</a>
+            <a href="./registro.html" class="btn-secondary">Crear Cuenta</a>
         </div>
-    </section>
+    </div>
+</section>
+<section class="features">
+    <h2>¿Por qué elegir Spotify Lite?</h2>
 
-    <!-- LLAMADO A LA ACCIÓN -->
-    <section class="cta">
-        <h2>Empieza a escuchar hoy</h2>
-        <button>Crear cuenta gratis</button>
-    </section>
+    <div class="features-container">
+        <div class="feature-card">
+            <h3>🎵 Millones de canciones</h3>
+            <p>Accede a un catálogo amplio y actualizado con todos tus artistas favoritos.</p>
+        </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 MusicApp - Todos los derechos reservados</p>
-    </footer>
+        <div class="feature-card">
+            <h3>🚫 Sin anuncios</h3>
+            <p>Disfruta de tu música sin interrupciones con nuestro plan Premium.</p>
+        </div>
 
+        <div class="feature-card">
+            <h3>📥 Descargas offline</h3>
+            <p>Lleva tu música a cualquier lugar incluso sin conexión a internet.</p>
+        </div>
+    </div>
+</section>
+<section class="cta">
+    <h2>Empieza a escuchar hoy</h2>
+    <p>Únete ahora y descubre una nueva forma de disfrutar la música.</p>
+    <a href="./registro.html" class="btn-primary">Crear Cuenta</a>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>Spotify Lite</h2>
+            <p>Tu música, en cualquier momento.</p>
+        </div>
+        <div class="footer-social">
+            <div class="footer-social-icons">
+                <a href="https://www.instagram.com/spotify/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/SpotifyColombia/?brand_redir=6243987495&locale=es_LA#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/Spotify_LATAM" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Spotify AB</p>
+    </div>
+</footer>
 </body>
 </html>
